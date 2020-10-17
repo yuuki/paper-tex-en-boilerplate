@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ubuntu-texlive-en:
+    image: yuuki/ubuntu-texlive-en
+    command: sleep infinity
+    volumes:
+      - ../:/data
+      - ~/.gitconfig:/root/.gitconfig
+      - ./.latexmkrc:/root/.latexmkrc
+    environment:
+      SHELL: '/bin/bash'
+      TEXINPUTS: './/;'
+      BSTINPUTS: './/;'
+      BIBINPUTS: './/;'

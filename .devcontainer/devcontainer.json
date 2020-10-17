@@ -1,0 +1,11 @@
+{
+    "name": "ubuntu-texlive-en",
+    "dockerComposeFile": "docker-compose.yml",
+    "extensions": [
+        "formulahendry.terminal",
+        "james-yu.latex-workshop"
+    ],
+    "service": "ubuntu-texlive-en",
+    "workspaceFolder": "/data",
+    "shutdownAction": "stopCompose"
+}
