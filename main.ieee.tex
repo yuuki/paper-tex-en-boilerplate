@@ -1,0 +1,54 @@
+\documentclass[10pt, conference, compsoc]{IEEEtran} % IEEE Computer Society conference
+\IEEEoverridecommandlockouts
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[hyphens]{url}
+
+\usepackage[%
+    style=ieee,
+    sorting=nyt,
+    terseinits=true,
+    sortcites=true,
+    % citestyle=numeric,
+    defernumbers=true,
+    bibencoding=utf8,
+    maxnames=8,
+    minnames=1,
+    maxbibnames=99,
+    backend=biber
+]{biblatex}
+
+\addbibresource{references.bib}
+\DeclareNameAlias{default}{last-first}
+\renewcommand*{\revsdnamepunct}{}
+\renewrobustcmd*{\bibinitperiod}{}
+\usepackage{flushend}
+
+\begin{document}
+
+\title{IEEE Template of LaTeX in English}
+
+\author{\IEEEauthorblockN{Yuuki Tsubouchi}
+\IEEEauthorblockA{\textit{SAKURA internet Inc.},\\
+\textit{Graduate School of Infomatics, Kyoto University} \\
+Email: y-tsubouchi@sakura.ad.jp,\\
+y-tsubouchi@net.ist.i.kyoto-u.ac.jp}
+}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\begin{IEEEkeywords}
+\end{IEEEkeywords}
+
+% \IEEEpeerreviewmaketitle
+
+\section{Introduction}
+\label{sec:introduction}
+
+\printbibliography
+
+\end{document}
